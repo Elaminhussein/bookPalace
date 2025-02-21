@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book Palace</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="container">
+      <h1>Book Palace</h1>
+      <nav>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#books">Books</a></li>
+          <li><a href="#cart">Cart</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="container">
+      <h2>Welcome to Book Palace</h2>
+      <p>Discover your next favorite book from our curated collection.</p>
+      <a href="#books" class="btn">Explore Books</a>
+    </div>
+  </section>
+
+  <!-- Books Section -->
+  <section id="books" class="books">
+    <div class="container">
+      <h2>Featured Books</h2>
+      <div class="book-grid">
+        <div class="book-card">
+          <img src="https://source.unsplash.com/400x600/?book,novel" alt="Book 1">
+          <h3>Book Title 1</h3>
+          <p>$19.99</p>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="book-card">
+          <img src="https://source.unsplash.com/400x600/?book,fiction" alt="Book 2">
+          <h3>Book Title 2</h3>
+          <p>$24.99</p>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="book-card">
+          <img src="https://source.unsplash.com/400x600/?book,classic" alt="Book 3">
+          <h3>Book Title 3</h3>
+          <p>$14.99</p>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Cart Section -->
+  <section id="cart" class="cart">
+    <div class="container">
+      <h2>Your Cart</h2>
+      <div class="cart-items">
+        <!-- Cart items will be dynamically added here -->
+      </div>
+      <p class="total">Total: $<span id="total">0.00</span></p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2023 Book Palace. All rights reserved.</p>
+      <p>Made with ❤️ by Your Name</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
